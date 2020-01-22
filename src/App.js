@@ -11,9 +11,20 @@ function App() {
       <header className="App-header">
         
       </header>
-      <div className='intro'>
-        <div className='hello'><h1>HELLO.</h1></div>
-        <div className='name'><h1>My name is Meredith.</h1></div>
+
+      <div class="split left">
+        <div class="centered">
+          <h1>Hello.</h1>
+          <h2>My name is<span className='name'> Meredith.</span></h2>
+        </div>
+      </div>
+
+      <div class="split right">
+        <div class="centered">
+          <p>link</p>
+          <p>link</p>
+          <p>link</p>
+        </div>
       </div>
       
     </div>
