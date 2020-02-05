@@ -1,0 +1,73 @@
+h2 {
+  line-height: 100%;
+  font-size: 300%;
+  margin: 0%;
+  padding: 0%;
+}
+
+h1 {
+  font-size: 800%;
+  margin: 0%;
+  padding: 0%;
+}
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color:rgb(251,63,65);
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color:white;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* line-height: 1.6; */
+  font-weight: 600;
+}
+
+.name {
+  /* color: white; */
+  /* margin: 2% */
+}
+
+.emphasized {
+  color:rgb(251,63,65)
+}
+
+.emphasized:hover {
+  color: black
+}
+
+ul {
+  /* margin: 0%; */
+  /* padding: 0%; */
+}
+
+
+li {
+  list-style: none;
+  font-size: 200%;
+}
+
+
+/* rgb(251,63,65) */
