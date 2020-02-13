@@ -23,9 +23,10 @@ function HomePage() {
         <div class="centered">
           <ul>
             <li>Look at my <Link to='/resume' class='emphasized'>resume</Link>.</li>
-            <li>Explore my <span class='emphasized'>projects</span>.</li>
-            <li>Check out my <span class='emphasized'>GitHub</span>.</li>
-            <li><span class='emphasized'>Get in touch</span> with me.</li>
+            <li>Explore my <Link to='/projects' class='emphasized'>projects</Link>.</li>
+            <li>Check out my <Link to='/github' class='emphasized'>GitHub</Link>.</li>
+            <li><Link class='emphasized'>Get in touch</Link> with me.</li>
+            <li>Learn about <Link class='emphasized'>me.</Link></li>
           </ul>
           
 

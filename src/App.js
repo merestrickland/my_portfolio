@@ -9,10 +9,13 @@ function App() {
   //get products from state and filter by the id typed at end of url?
   return (
       <Router>
-        <HomePage />
+        
         <Switch>
-          <Route path="/resume" component={Resume}>
-            {/* <Resume /> */}
+          <Route path='/'>
+            <HomePage />
+          </Route>
+          <Route path="/resume">
+            <Resume />
           </Route>
           {/* <Route path= '/products/:id'>
             <ProductModal />
