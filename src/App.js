@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import HomePage from '../src/homepage/homepage.component'
 import Resume from '../src/resume/resume.component'
+import Projects from '../src/projects/projects.component'
 
 function App() {
   //get products from state and filter by the id typed at end of url?
@@ -14,8 +15,10 @@ function App() {
           <Route path='/'>
             <HomePage />
           </Route>
-          <Route path="/resume">
-            <Resume />
+          <Route path="/resume" component={Resume}/>
+  
+          <Route path="/projects">
+            <Projects />
           </Route>
           {/* <Route path= '/products/:id'>
             <ProductModal />

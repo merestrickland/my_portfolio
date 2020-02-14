@@ -1,11 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 
 import './homepage.styles.css'
 
 
 function HomePage() {
+
+  let history = useHistory()
+
   return (
     <div className="HomePage">
       {/* <style>
@@ -26,10 +29,8 @@ function HomePage() {
             <li>Explore my <Link to='/projects' class='emphasized'>projects</Link>.</li>
             <li>Check out my <Link to='/github' class='emphasized'>GitHub</Link>.</li>
             <li><Link class='emphasized'>Get in touch</Link> with me.</li>
-            <li>Learn about <Link class='emphasized'>me.</Link></li>
+            <li>Learn about <Link class='emphasized'>me</Link>.</li>
           </ul>
-          
-
         </div>
       </div>
       
