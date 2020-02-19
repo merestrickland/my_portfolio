@@ -60,14 +60,15 @@ h1 {
 }
 
 ul {
-  /* margin: 0%; */
-  /* padding: 0%; */
+  margin: -45%;
+  padding: 0%;
 }
 
 
 li {
   list-style: none;
-  font-size: 200%;
+  font-size: 140%;
+  margin: 2%;
 }
 
 a {

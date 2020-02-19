@@ -16,21 +16,21 @@ function HomePage() {
         @import url('https://fonts.googleapis.com/css?family=Stoke&display=swap');
       </style> */}
 
-      <div class="split left">
-        <div class="centered">
+      <div className="split left">
+        <div className="centered">
           <h1>Hello.</h1>
           <h2>My name is<span className='name'> Meredith.</span></h2>
         </div>
       </div>
 
-      <div class="split right">
-        <div class="centered">
+      <div className="split right">
+        <div className="centered">
           <ul>
-            <li>Look at my <Link to='/resume' class='emphasized'>resume</Link>.</li>
-            <li>Explore my <Link to='/projects' class='emphasized'>projects</Link>.</li>
-            <li>Check out my <Link to='/github' class='emphasized'>GitHub</Link>.</li>
-            <li><Link class='emphasized'>Get in touch</Link> with me.</li>
-            <li>Learn about <Link class='emphasized'>me</Link>.</li>
+            <li>Look at my <Link to='/resume' className='emphasized'>resume</Link>.</li>
+            <li>Explore my <Link to='/projects' className='emphasized'>projects</Link>.</li>
+            <li>Check out my <Link to='/github' className='emphasized'>GitHub</Link>.</li>
+            <li><Link className='emphasized'>Get in touch</Link> with me.</li>
+            <li>Learn about <Link className='emphasized'>me</Link>.</li>
           </ul>
         </div>
       </div>
