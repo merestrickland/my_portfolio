@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import HomePage from './pages/homepage/homepage.component'
 import Resume from './pages/resume/resume.component'
 import Projects from './pages/projects/projects.component'
+import Email from './pages/email/email.component'
 import PDFJSBackend from './backends/pdfjs'
 
 function App() {
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route path="/projects">
             <Projects />
+          </Route>
+          <Route path="/email">
+            <Email />
           </Route>
           <Route path="/">
             <HomePage />
