@@ -3,24 +3,23 @@ body {
 }
 
 form {
-  width: 30%;
+  width: 90%;
   height: 56%;
   /* border-radius: 4px;
   position: relative;
   transition: 0.3s all; */
-  margin: 0px auto;
+  margin: 50px auto;
 }
 
 form label {
-  padding: 0px 16px;
-  margin: 5px;
+  margin: 5px 0px;
 }
 
 form input {
 
   width: 80%;
   height: 56px;
-  position: relative;
+  /* position: relative; */
   padding: 0px 16px;
   border-width: 1px ;
   border-radius: 4px;
@@ -32,37 +31,18 @@ form input {
   color: black;
   margin: 5%;
   
-
 }
-
-/* input:hover {
-  box-shadow:0px 4px 20px 0px rgba(0, 0, 0, 0.05);
-  border-color: black ;
-  border-width: 3px ;
-  /* border: 3px solid transparent */
-/* }  */
-
 
 input:focus {
   border-color: black;
 }
 
-/* input.textarea {
-  height: 150px;
-  width: 100%
-} */
-
 input.submit {
-  /* margin: auto */
-  /* padding: auto */
   color: white;
   background-color: black;
   cursor: pointer;
 }
 
-input.submit:hover {
-  /* color: rgb(251,63,65); */
-}
 
 textarea {
   height: 150px;
@@ -79,12 +59,13 @@ textarea {
   border-color: black ;
   color: black;
   margin: 5%;
+  
 }
 
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   white-space:pre-line;  
-  position:relative;
+  /* position:relative; */
   top:-7px;
 }
 
@@ -92,5 +73,37 @@ textarea {
 
 h3 {
   font-size: 500%;
-  margin: 30px auto;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.left {
+  left: 0;
+  background-color:white;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color:rgb(251, 63, 65);
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* line-height: 1.6; */
+  font-weight: 600;
+}
+
+p {
+  font-size: 16px;
 }

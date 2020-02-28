@@ -13,6 +13,10 @@ export default function Form() {
     { name: '', email: '', message: ''}
   )
 
+  const [submitScreen, setSubmitScreen] = useState(
+    false
+  )
+
   const history = useHistory()
 
   const handleChange = (e) => {
@@ -40,58 +44,99 @@ export default function Form() {
       .catch(err => {
         setEmailMessage({...emailMessage, disabled: false, emailSent: false})
       })
+      .then(setSubmitScreen(true))
   }
 
 
   return (
+
+
+
+
+    !submitScreen ?
+
+
     <div>
-    <h3>Get In Touch</h3>
-    <form onSubmit={handleSubmit}>
-      <label>  Name: 
-        <input 
-          className ='fields'
-          type='text'
-          name='name'
-          value={emailMessage.name} 
-          placeholder='Elizabeth Warren' 
-          onChange={handleChange}
-          required>
-        </input>
-      </label>
+      <div className="split left">
+        <div className="centered">
+          <h3>Get In Touch</h3>
+        </div>
+      </div>
 
-      
-      <label>  Email: 
-        <input 
-          className ='fields'
-          type='email' 
-          name='email'
-          value={emailMessage.email} 
-          placeholder='warren2020@policyplans.com'
-          onChange={handleChange}
-          required>
-        </input>
-      </label>
+      <div className="split right">
+        <div className="centered">
+          <form onSubmit={handleSubmit}>
+            <label>  Name: 
+              <input 
+                className ='fields'
+                type='text'
+                name='name'
+                value={emailMessage.name} 
+                placeholder='Elizabeth Warren' 
+                onChange={handleChange}
+                required>
+              </input>
+            </label>
 
-      {/* {console.log({email})} */}
+            
+            <label>  Email: 
+              <input 
+                className ='fields'
+                type='email' 
+                name='email'
+                value={emailMessage.email} 
+                placeholder='warren2020@policyplans.com'
+                onChange={handleChange}
+                required>
+              </input>
+            </label>
 
-      <label>  Message: 
-        <textarea 
-          type='text'
-          wrap='hard'
-          name='message'
-          value={emailMessage.message} 
-          placeholder={'Dear Meredith, \n \n Thank you for your recurring donation. \n I think you are really cool and smart. \n \n Your pal, Liz'}
-          onChange={handleChange}>
-        </textarea>
-      </label>
+            {/* {console.log({email})} */}
 
-      <input 
-        className = 'submit'
-        type="submit" 
-        value="Send!"
-      />
+            <label>  Message: 
+              <textarea 
+                type='text'
+                wrap='hard'
+                name='message'
+                value={emailMessage.message} 
+                placeholder={'Dear Meredith, \n \n Thank you for your recurring donation. \n I think you are really cool and smart. \n \n Your pal, Liz'}
+                onChange={handleChange}>
+              </textarea>
+            </label>
 
-    </form>
+            <input 
+              className = 'submit'
+              type="submit" 
+              value="Send!" />
+
+          </form>
+          </div>
+          </div>
     </div>
+
+
+    : 
+
+    <div>
+      <div className="split left">
+        <div className="centered">
+          <h1>Thank you!</h1>
+
+        </div>
+      </div>
+
+      <div className="split right">
+        <div className="centered">
+        <p>Your message has been sent. I will respond shortly.</p>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
   )
 }
