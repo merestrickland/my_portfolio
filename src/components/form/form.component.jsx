@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import Axios from 'axios'
+import './form.styles.css'
 
 import Submit from '../submit/submit.component'
 
@@ -43,9 +44,12 @@ export default function Form() {
 
 
   return (
+    <div>
+    <h3>Get In Touch</h3>
     <form onSubmit={handleSubmit}>
       <label>  Name: 
         <input 
+          className ='fields'
           type='text'
           name='name'
           value={emailMessage.name} 
@@ -58,6 +62,7 @@ export default function Form() {
       
       <label>  Email: 
         <input 
+          className ='fields'
           type='email' 
           name='email'
           value={emailMessage.email} 
@@ -70,20 +75,23 @@ export default function Form() {
       {/* {console.log({email})} */}
 
       <label>  Message: 
-        <input 
-          as='textarea'
+        <textarea 
+          type='text'
+          wrap='hard'
           name='message'
           value={emailMessage.message} 
-          placeholder='Your Message Here...'
+          placeholder={'Dear Meredith, \n \n Thank you for your recurring donation. \n I think you are really cool and smart. \n \n Your pal, Liz'}
           onChange={handleChange}>
-        </input>
+        </textarea>
       </label>
 
       <input 
+        className = 'submit'
         type="submit" 
-        value="Submit"
+        value="Send!"
       />
 
     </form>
+    </div>
   )
 }
