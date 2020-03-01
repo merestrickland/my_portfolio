@@ -1,6 +1,6 @@
-body {
+/* body {
   background-color: rgb(251,63,65);
-}
+} */
 
 form {
   width: 90%;
@@ -81,17 +81,27 @@ h3 {
   text-align: center;
 }
 
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
 
-.left {
+ /* .left {
   left: 0;
   background-color:white;
 }
 
 /* Control the right side */
-.right {
+/* .right {
   right: 0;
   background-color:rgb(251, 63, 65);
-}
+}  */
 
 /* If you want the content centered horizontally and vertically */
 .centered {
@@ -106,4 +116,9 @@ h3 {
 
 p {
   font-size: 16px;
+  color: black
+}
+
+.hero {
+  color: rgb(251,63,65)
 }

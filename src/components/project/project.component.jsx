@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
-export default function Project() {
+export default function Project(props) {
+
+  const [project, setProject] = useState([])
+
+  useEffect((props) => {
+      setProject(props)
+  }, [])
+
+
+  // console.log(project)
+
   return (
     <div>
-      Each Project
+      <p> sup </p>
     </div>
   )
 }

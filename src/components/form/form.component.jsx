@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 import Axios from 'axios'
 import './form.styles.css'
 
-import Submit from '../submit/submit.component'
+import NavList from '../navlist/navlist.component'
+
 
 
 export default function Form() {
@@ -57,13 +58,13 @@ export default function Form() {
 
 
     <div>
-      <div className="split left">
+      <div className="split right">
         <div className="centered">
-          <h3>Get In Touch</h3>
+          <h3 className='hero'>Get In Touch</h3>
         </div>
       </div>
 
-      <div className="split right">
+      <div className="split left">
         <div className="centered">
           <form onSubmit={handleSubmit}>
             <label>  Name: 
@@ -99,7 +100,7 @@ export default function Form() {
                 wrap='hard'
                 name='message'
                 value={emailMessage.message} 
-                placeholder={'Dear Meredith, \n \n Thank you for your recurring donation. \n I think you are really cool and smart. \n \n Your pal, Liz'}
+                placeholder={'Dear Meredith, \n \n Thank you for your recurring donation. \n I think you are really cool and smart. \n Your pal, Liz'}
                 onChange={handleChange}>
               </textarea>
             </label>
@@ -121,13 +122,14 @@ export default function Form() {
       <div className="split left">
         <div className="centered">
           <h1>Thank you!</h1>
+          <p>Your message has been sent. I will respond shortly</p>
 
         </div>
       </div>
 
       <div className="split right">
         <div className="centered">
-        <p>Your message has been sent. I will respond shortly.</p>
+          <NavList />
         </div>
       </div>
 
