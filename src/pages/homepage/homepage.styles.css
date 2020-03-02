@@ -46,6 +46,10 @@ h1 {
   font-weight: 600;
 }
 
+div.centered {
+  width: 90%
+}
+
 .name {
   /* color: white; */
   /* margin: 2% */
@@ -58,12 +62,6 @@ h1 {
 .emphasized:hover {
   color: black
 }
-
-ul {
-  margin: -45%;
-  padding: 0%;
-}
-
 
 li {
   list-style: none;

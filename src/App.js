@@ -11,18 +11,11 @@ import About from './pages/about/about.component'
 import PDFJSBackend from './backends/pdfjs'
 
 function App() {
-  //get products from state and filter by the id typed at end of url?
+
   return (
-      // <>
-      // <Router>
-      //   <Route exact path='/' component={HomePage}/>
-      //   <Route path='/projects' component={Projects}/>
-      //   <Route path='/resume' component={Resume} />
-      // </Router>
-      
-      // <>
+
       <Router>
-        {/* <NavBar /> */}
+       
         <Switch>
           <Route path="/resume">
             <Resume 

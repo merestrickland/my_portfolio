@@ -46,8 +46,8 @@ input.submit {
 
 textarea {
   height: 150px;
-  width: 100%;
-  position: relative;
+  width: 80%;
+  /* position: relative; */
   padding: 0px 16px;
   padding-top: 9%;
   border-width: 1px ;

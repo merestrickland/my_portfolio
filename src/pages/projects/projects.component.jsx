@@ -6,62 +6,35 @@ import axios from 'axios'
 import Project from '../../components/project/project.component'
 
 
-const Projects = ( { query }) => {
+const Projects = () => {
 
   const [projects, setProjects] = useState([])
-  // const [isFetching, setFetching] = useState([])
+  // const [loading, setLoading] = useState(false)
 
-  useEffect( () => {
 
-    // let ignore = false;
-
-    // async function fetchProjects(){
-    //   const result = await axios('http://localhost:8000/projects/')
-    //   if (!ignore) setProjects(result.data)
-    // }
-
-    // fetchProjects()
-    // return () => { ignore = true; }
-
-    axios.get('http://localhost:8000/projects/')
-      .then(res => {
-        // console.log(res.data)
-        setProjects(res.data)
-      })
-      .catch((err) => {
-        console.log(err)
-      })
+  useEffect(() => {
+    getReqProj()
   }, [])
 
-  // useEffect(function fetch(){
-  //   (async function(){
-  //     setFetching(true);
-  //     setProjects(await fetchProjects(query));
-  //     setFetching(false)
-  //   })()
-  // }, [query])
+  const getReqProj = () => {
+    // setLoading(true)
+      axios.get('http://localhost:8000/projects/').then(res => {
+        // setLoading(false)
+        setProjects(res.data);
+      })
+  }
 
-  // if (isFetching) {
-  //   return <div>Fetching projects ...</div>
-  // }
-
-
-
-
-
-
-  return (
-    <div>
-        {/* {projects.forEach(project => {
-          return <Project project={project}/>
-        })} */}
-        {/* <Project project={projects}/> */}
-        {console.log(projects)}
-        
-        
-    </div>
-    
-  )
+return (
+  <div className='row'>
+    <ul>
+    {/* {loading ? 'LOADING....' : ''} */}
+        {projects && projects.map(project => (
+          // <div key={project._id}>{project.name}</div>
+          <li key={project._id}><Project project={project}/></li>
+        ))}
+    </ul>
+  </div>
+)
 }
 
 export default Projects;
