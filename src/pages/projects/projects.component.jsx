@@ -19,7 +19,7 @@ const Projects = () => {
 
   const getReqProj = () => {
     // setLoading(true)
-      axios.get('http://localhost:8000/projects/').then(res => {
+      axios.get('https://master.d1b55s9zp1uo1m.amplifyapp.com/projects').then(res => {
         // setLoading(false)
         setProjects(res.data);
       })
