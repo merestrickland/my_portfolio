@@ -4,6 +4,7 @@ import { useHistory, Link } from 'react-router-dom';
 import axios from 'axios'
 
 import Project from '../../components/project/project.component'
+import './projects.styles.css'
 
 
 const Projects = () => {
@@ -25,8 +26,10 @@ const Projects = () => {
   }
 
 return (
-  <div className='row'>
-    <ul>
+  <div>
+      {console.log(projects)}
+
+    <ul className='container'>
     {/* {loading ? 'LOADING....' : ''} */}
         {projects && projects.map(project => (
           // <div key={project._id}>{project.name}</div>
