@@ -12,9 +12,10 @@ img {
   border-radius: 5px; */
 }
 
-.title {
+div.title {
   text-align: center;
   font-weight: bold;
+  font-size: 25px;
   /* border-color: rgb(251,63,65);
   border-radius: 5px; */
 }

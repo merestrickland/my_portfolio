@@ -13,3 +13,13 @@ li {
   margin: 20px;
   grid-template-columns: 30% 30% 30%;
 }
+
+a:active {
+  color: none;
+}
+/* 
+@media all and (max-width: 800px){
+  .container { flex-direction: column; }
+  .leftCol {width: 100%;}
+  .rightCol {width: 100%;}
+} */
