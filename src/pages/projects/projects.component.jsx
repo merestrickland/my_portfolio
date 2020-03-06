@@ -19,7 +19,7 @@ const Projects = () => {
 
   const getReqProj = () => {
     // setLoading(true)
-      axios.get('http://localhost:8000/projects/').then(res => {
+      axios.get('https://radiant-basin-61864.herokuapp.com/projects').then(res => {
         // setLoading(false)
         setProjects(res.data);
       })
