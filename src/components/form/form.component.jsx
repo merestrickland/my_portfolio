@@ -44,6 +44,7 @@ export default function Form() {
       })
       .catch(err => {
         setEmailMessage({...emailMessage, disabled: false, emailSent: false})
+        console.log(err)
       })
       .then(setSubmitScreen(true))
   }
