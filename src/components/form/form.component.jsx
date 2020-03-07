@@ -31,7 +31,7 @@ export default function Form() {
 
     console.log(emailMessage)
 
-    Axios.post('http://radiant-basin-61864.herokuapp.com/api/email', emailMessage)
+    Axios.post('https://radiant-basin-61864.herokuapp.com/api/email', emailMessage)
       .then(res => {
         if(res.data.success) {
           setEmailMessage({...emailMessage, disabled: false, emailSent: true})
