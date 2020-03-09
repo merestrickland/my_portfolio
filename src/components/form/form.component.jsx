@@ -5,6 +5,7 @@ import './form.styles.css'
 
 import NavList from '../navlist/navlist.component'
 
+const emailPostUrl = ('https://radiant-basin-61864.herokuapp.com')
 
 
 export default function Form() {
@@ -31,7 +32,7 @@ export default function Form() {
 
     console.log(emailMessage)
 
-    Axios.post('http://localhost:8000/api/email', emailMessage)
+    Axios.post(emailPostUrl + '/api/email', emailMessage)
       .then(res => {
         if(res.data.success) {
           setEmailMessage({...emailMessage, disabled: false, emailSent: true})
