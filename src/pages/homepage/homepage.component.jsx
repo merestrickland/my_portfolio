@@ -12,11 +12,9 @@ function HomePage() {
   let history = useHistory()
 
   return (
+ 
     <div className="HomePage">
-      {/* <style>
-        @import url('https://fonts.googleapis.com/css?family=Stoke&display=swap');
-      </style> */}
-
+      
       <div className="split left">
         <div className="centered">
           <h1>Hello.</h1>
