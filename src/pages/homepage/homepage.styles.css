@@ -56,11 +56,6 @@ div.centered {
   width: 90%
 }
 
-.name {
-  /* color: white; */
-  /* margin: 2% */
-}
-
 .emphasized {
   color:rgb(251,63,65)
 }
@@ -81,6 +76,15 @@ a {
 
 a:active {
   color: none;
+}
+
+@media all and (max-width: 800px){
+
+
+  .right {
+    background-color:white;
+  }
+
 }
 
 

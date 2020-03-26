@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './project.styles.css'
+import LazyLoad from 'react-lazyload'
 
 export default function Project(props) {
 
@@ -8,7 +9,9 @@ export default function Project(props) {
       <div className='img title'>
         {console.log(props.project.image)}
         {/* <img src={process.env.PUBLIC_URL + `/img/` + props.project.image}></img> */}
-        <img src={props.project.image}/>
+        <LazyLoad height={200}>
+          <img src={props.project.image}/>
+        </LazyLoad>
         <div className='title'> {props.project.name} </div>
       </div>
       
