@@ -25,6 +25,9 @@ function App() {
           <Route path="/projects">
             <Projects />
           </Route>
+          {/* <Route path="/projects/:id">
+            <Project />
+          </Route> */}
           <Route path="/email">
             <Email />
           </Route>
