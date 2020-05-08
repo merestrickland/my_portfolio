@@ -13,17 +13,18 @@ function HomePage() {
 
   return (
  
-    <div className="HomePage">
+    <div className="container">
       
-      <div className="split left">
-        <div className="centered">
+      <div className="left">
+        <div className="hello-my-name">
           <h1>Hello.</h1>
-          <h2>My name is<span className='name'> Meredith.</span></h2>
+          <h2 clssName="name">My name is<span className='name'> Meredith.</span></h2>
         </div>
       </div>
 
-      <div className="split right">
-        <div className="centered">
+      <div className="right">
+  
+        <div className="nav-list">
           <NavList />
         </div>
       </div>

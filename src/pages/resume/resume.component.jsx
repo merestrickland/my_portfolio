@@ -29,7 +29,7 @@ export default class Resume extends React.Component {
       {/* <div className='navlist-container'>
         <NavList className='navlist'/>
       </div> */}
-      <div ref={this.viewerRef} id='viewer' style={{ width: '100%', height: '1000px' }}>
+      <div ref={this.viewerRef} id='viewer' style={{ width: '100vw', height: '100vh' }}>
 
       </div>
       </>

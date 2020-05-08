@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function NavList() {
   return (
-    <div>
+    <>
       {/* <Link to='/'>
         <img src='https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/smiley_PNG36233.png'/>
       </Link> */}
@@ -16,6 +16,6 @@ export default function NavList() {
         {/* <li><Link to='/email'className='emphasized'>Get in touch</Link> with me.</li> */}
         <li>Learn <Link to='/about'className='emphasized'>about me</Link>.</li>
       </ul>
-    </div>
+    </>
   )
 }
