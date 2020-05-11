@@ -8,7 +8,7 @@ export default function NavList() {
         <img src='https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/smiley_PNG36233.png'/>
       </Link> */}
       
-      <ul>
+      <ul className='nav-links'>
         <li>Look at my <Link to='/resume' className='emphasized'>resume</Link>.</li>
         <li>Explore my <Link to='/projects' className='emphasized'>projects</Link>.</li>
         <li>Check out my <a href={`https://github.com/merestrickland`} target='_blank' className='emphasized'>GitHub</a>.</li>

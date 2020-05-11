@@ -33,7 +33,8 @@ return (
     {/* {loading ? 'LOADING....' : ''} */}
         {projects && projects.map(project => (
           // <div key={project._id}>{project.name}</div>
-          <li key={project._id}><Project project={project}/></li>
+          <li key={project._id}
+            className='project-card'><Project project={project}/></li>
         ))}
     </ul>
   </div>

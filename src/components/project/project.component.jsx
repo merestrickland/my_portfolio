@@ -10,7 +10,7 @@ export default function Project(props) {
         {console.log(props.project.image)}
         {/* <img src={process.env.PUBLIC_URL + `/img/` + props.project.image}></img> */}
         <LazyLoad height={200}>
-          <img src={props.project.image}/>
+          <img src={props.project.image} className='project-img'/>
         </LazyLoad>
         <div className='title'> {props.project.name} </div>
       </div>
