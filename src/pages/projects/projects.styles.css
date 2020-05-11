@@ -2,21 +2,41 @@ body {
   background-color: rgb(251,63,65);
 }
 
-li {
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  overflow: scroll;
+  /* margin: 20px; */
+  /* grid-template-columns: 30% 30% 30%; */
+}
+
+.project-card {
+  width: 22%;
   background-color: white;
   border-radius: 5px;
+  font-size: 2vw;
+}
+
+@media all and (max-width: 700px){
+  .project-card {
+    width: 45%;
+  }
+}
+
+@media all and (max-width: 400px){
+  .project-card {
+    width: 80%;
+  }
 }
 
 
-.container {
-  display: grid;
-  margin: 20px;
-  grid-template-columns: 30% 30% 30%;
-}
+/* 
 
 a:active {
   color: none;
-}
+} */
 /* 
 @media all and (max-width: 800px){
   .container { flex-direction: column; }

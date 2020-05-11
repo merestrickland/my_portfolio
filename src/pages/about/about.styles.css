@@ -1,16 +1,23 @@
-img {
+.me-pic {
   max-width: 60%;
+  max-height: 150%;
+  margin: 3%
 }
 
-.title {
-  font-size: 200%;
-  margin: 0px 0px;
+.name-title {
+  font-size: 4vw;
+  margin: 3% 0%;
 }
 
-p {
+/* p {
   margin: 2% 6% 
+} */
+
+.about-me {
+  font-size: 1.9vw;
+  margin: 2%
 }
 
 .email {
-  font-size: 125%;
+  font-size: 2vw;
 }

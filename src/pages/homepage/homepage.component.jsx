@@ -18,7 +18,7 @@ function HomePage() {
       <div className="left">
         <div className="hello-my-name">
           <h1>Hello.</h1>
-          <h2 clssName="name">My name is<span className='name'> Meredith.</span></h2>
+          <h2 className="name">My name is<span className='name'> Meredith.</span></h2>
         </div>
       </div>
 
