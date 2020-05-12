@@ -4,18 +4,42 @@ import LazyLoad from 'react-lazyload'
 
 export default function Project(props) {
 
+  // useEffect(() => {setClickedProject(false)}, [])
+
+
+
+
+  // const [clickedProject, setClickedProject] = useState(null)
+
+
+  // const clickProject = (projectId) => {
+    
+  //   const projectClicked = props.project._id === projectId
+
+  //   console.log(projectClicked)
+  // }
+
+  //  const clickProject = (e) => {
+  //    console.log(e.target)
+  //   setClickedProject(true)
+  //   console.log(clickedProject)
+  // }
+
+
+
+
   return (
     <div className='card'>
       <div className='img title'>
-        {console.log(props.project.image)}
+        {/* {console.log(props.project._id)} */}
         {/* <img src={process.env.PUBLIC_URL + `/img/` + props.project.image}></img> */}
-        <LazyLoad height={200}>
+
           <img src={props.project.image} className='project-img'/>
-        </LazyLoad>
+
         <div className='title'> {props.project.name} </div>
       </div>
       
-      <div className='bottom'>
+      {/* <div className='bottom'>
         
         <div className='description'>{props.project.description}</div>
 
@@ -32,7 +56,7 @@ export default function Project(props) {
           }
         </div>
 
-      </div>
+      </div> */}
     </div>
   )
 }
