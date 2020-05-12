@@ -36,11 +36,14 @@ if(clickedProject){
               <img src={clickedProject.image} className='project-show-image'></img>
               <div className='project-show-title'>{clickedProject.name}</div>
               <div className='project-show-description'>{clickedProject.description}</div>
-              <div className='project-show-tools'>Tools Used: {clickedProject.toolsUsed}
+              <div className='project-show-links'>
+                <div className='project-show-tools'>Tools Used: {clickedProject.toolsUsed}
+                </div>
+                <div className='project-show-demo'>
+                <a src={clickedProject.demoVid}>View a Demo </a>
+                </div>
               </div>
-              <div className='project-show-demo'>
-              <a src={clickedProject.demoVid}>View a Demo </a>
-              </div>
+              
             </div> 
           </div>
 }

@@ -53,7 +53,7 @@ div#root {
   /* height: 100vh; */
   background-color: white;
   border-radius: 5px;
-  font-size: 9vw;
+  font-size: 5vw;
   margin: 5%;
 
 }
@@ -65,25 +65,29 @@ div#root {
 }
 
 .project-show-description {
-  font-size: 3vw;
+  font-size: 2vw;
   margin: 3%;
 }
 
 .project-show-links {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: flex-start;
+
 }
 
 .project-show-tools {
-  font-size: 3vw;
+  font-size: 2vw;
+  font-weight: bold;
   margin: 1%;
 }
 
 .project-show-demo {
-  font-size: 3vw;
-  margin: 1%
+  font-size: 2vw;
+  margin: 1%;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 @media all and (max-width: 1000px){
