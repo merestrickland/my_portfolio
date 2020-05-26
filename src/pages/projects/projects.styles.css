@@ -29,38 +29,79 @@ div#root {
   background-color: white;
   border-radius: 5px;
   font-size: 2vw;
+  box-shadow: 5px 2px 10px #444444;
+}
+
+.project-card:hover{
+  box-shadow: 10px 5px 20px 0px #444444;
+
 }
 
 .project-show-container {
   display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
+  /* flex-direction: row;
+  flex-flow: wrap; */
   justify-content: space-evenly;
   align-items: center;
   overflow: scroll;
   padding: 0;
-  height: 100vh;
+  max-height: 100vh;
   /* align-content: center; */
 }
 
 .project-show-titlecard {
 
   display: flex;
+  /* max-height: 100vh; */
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   /* justify-content: space-around; */
-  width: 90%;
+  width: 60%;
   /* height: 100vh; */
   background-color: white;
-  border-radius: 5px;
+  border-radius: 5%;
   font-size: 5vw;
   margin: 5%;
+  box-shadow: 10px 5px 20px 0px #444444;
 
+}
+
+.project-show-links-left {
+  display: block;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  width: 50%;
+  /* margin: 2% 2% 2% 5%; */
+  /* flex-direction: column; */
+  justify-content: left;
+  /* align-items: flex-start; */
+}
+
+/* .link-url {
+  max-width: 20%;
+} */
+
+.link-image {
+  max-width: 20%;
+  margin: 5%;
+}
+
+
+.project-show-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.project-show-title {
+  padding: 2%;
 }
 
 .project-show-image {
     max-width: 85%;
-    margin: 10% 3% 3% 3%;
+    margin: 3% 3% 3% 3%;
     /* border: .5vw solid rgb(251,63,65) */
 }
 
@@ -69,13 +110,8 @@ div#root {
   margin: 3%;
 }
 
-.project-show-links {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-around; */
-  align-items: flex-start;
 
-}
+
 
 .project-show-tools {
   font-size: 2vw;
@@ -104,6 +140,9 @@ div#root {
 @media all and (max-width: 700px){
   .project-card {
     width: 80%;
+  }
+  div.title {
+    font-size: 4vw;
   }
 }
 
