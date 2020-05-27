@@ -33,6 +33,7 @@ const Projects = () => {
     return (
       <div className="project-show-container">
         <div className="project-show-titlecard">
+<div className='link-container'>
           <div className="project-show-links-left">
             {/* <div className='test'></div>
               <div className='test'></div> */}
@@ -50,7 +51,14 @@ const Projects = () => {
               ></img>
             </a>
           </div>
-          <div>{/* X out */}</div>
+
+
+
+          <div className='project-show-links-right'>
+            <img className='link-image'src='https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/closeIcon.png'/>
+          </div>
+
+          </div>
 
           <div className="project-show-info">
             <div className="project-show-title">{clickedProject.name}</div>

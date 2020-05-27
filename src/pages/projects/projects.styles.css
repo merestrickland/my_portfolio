@@ -66,20 +66,19 @@ div#root {
 
 }
 
-.project-show-links-left {
-  display: block;
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
-  width: 50%;
-  /* margin: 2% 2% 2% 5%; */
-  /* flex-direction: column; */
-  justify-content: left;
-  /* align-items: flex-start; */
+.link-container {
+  display: flex;
 }
 
-/* .link-url {
-  max-width: 20%;
-} */
+.project-show-links-left {
+  width: 50%;
+  justify-content: left;
+}
+
+.project-show-links-right {
+  width: 50%;
+  justify-content: flex-end;
+}
 
 .link-image {
   max-width: 20%;
