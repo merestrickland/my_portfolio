@@ -29,39 +29,43 @@ const Projects = () => {
       });
   };
 
-  const closeProject = () => setClickedProject(null)
+  const closeProject = () => setClickedProject(null);
 
   if (clickedProject) {
     return (
       <div className="project-show-container">
         <div className="project-show-titlecard">
-<div className='link-container'>
-          <div className="project-show-links-left">
-            {/* <div className='test'></div>
-              <div className='test'></div> */}
+          <div className="link-container">
+            <div className="project-show-links-left">
+              {clickedProject.github && (
+                <a href={clickedProject.github} target="_blank">
+                  <img
+                    className="link-image"
+                    src="https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/githubLogo+copy.png"
+                    alt="gitHub"
+                  />
+                </a>
+              )}
 
-            <a href={clickedProject.demoVid}>
+              {clickedProject.demoVid && (
+                <a href={clickedProject.demoVid} target="_blank">
+                  <img
+                    className="link-image"
+                    src="https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/web.png"
+                    alt="demo"
+                    target="_blank"
+                  />
+                </a>
+              )}
+            </div>
+
+            <div className="project-show-links-right">
               <img
+                onClick={() => closeProject()}
                 className="link-image"
-                src="https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/githubLogo+copy.png"
-                alt="gitHub"
+                src="https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/closeIcon.png"
               />
-            </a>
-            <a href={clickedProject.demoVid}>
-              <img
-                className="link-image"
-                src="https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/web.png"
-                alt='demo'
-              />
-            </a>
-          </div>
-
-
-
-          <div className='project-show-links-right'>
-            <img onClick={() => closeProject()}className='link-image'src='https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/closeIcon.png'/>
-          </div>
-
+            </div>
           </div>
 
           <div className="project-show-info">
