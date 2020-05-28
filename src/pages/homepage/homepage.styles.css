@@ -9,15 +9,16 @@ body {
 }
 
 .container {
-  height: vh;
+  height: 100vh;
   /* width: vw; */
   display: flex;
   margin: 0;
+  flex-direction: column;
 }
 
-div.container {
+/* div.container {
   margin: 0;
-}
+} */
 
 .left {
   height: 100vh;
@@ -37,8 +38,6 @@ div.container {
   justify-content: center;
   align-items: center;
 }
-
-
 
 .hello-my-name {
   width: 80%;

@@ -29,6 +29,8 @@ const Projects = () => {
       });
   };
 
+  const closeProject = () => setClickedProject(null)
+
   if (clickedProject) {
     return (
       <div className="project-show-container">
@@ -42,20 +44,22 @@ const Projects = () => {
               <img
                 className="link-image"
                 src="https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/githubLogo+copy.png"
+                alt="gitHub"
               />
             </a>
             <a href={clickedProject.demoVid}>
               <img
                 className="link-image"
                 src="https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/web.png"
-              ></img>
+                alt='demo'
+              />
             </a>
           </div>
 
 
 
           <div className='project-show-links-right'>
-            <img className='link-image'src='https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/closeIcon.png'/>
+            <img onClick={() => closeProject()}className='link-image'src='https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/closeIcon.png'/>
           </div>
 
           </div>
