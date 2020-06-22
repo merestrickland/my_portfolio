@@ -1,24 +1,17 @@
 body {
   font-family: 'Spartan', sans-serif;
-  /* overflow: hidden; */
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
   display: flex;
   height: 100vh;
 }
 
 .container {
   height: 100vh;
-  /* width: vw; */
   display: flex;
   margin: 0;
   flex-direction: row;
 }
-
-/* div.container {
-  margin: 0;
-} */
 
 .left {
   height: 100vh;
@@ -65,19 +58,32 @@ body {
 .nav-links {
   margin: 0;
   padding: 0;
-  font-size: 2vw;
+  font-size: 1.5vw;
   width: 100%;
+}
+
+
+@media all and (max-width: 1200px){
+
+  .nav-links {
+    font-size: 2vw;
+  }
+
+  h1 {
+    font-size: 11vw;
+  }
+
+  h2 {
+    font-size: 4.5vw
+  }
 }
 
 @media all and (max-width: 700px){
 
   .container {
-    /* height: 100vh; */
-    /* width: vw; */
-    /* display: flex; */
-    /* margin: 0; */
     flex-direction: column;
   }
+
   .left {
     height: 50vh;
     width: 100vw
@@ -88,22 +94,19 @@ body {
     width: 100vw
   }
 
-  /* .hello-my-name {
-    overflow: auto;
-  } */
-
   .nav-links {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 
+
 h1 {
-  font-size: 11vw;
+  font-size: 10vw;
   margin: 0;
 }
 
 h2 {
-  font-size: 5vw;
+  font-size: 4vw;
   margin: 3%;
 }
 
@@ -129,57 +132,7 @@ a:active {
   color: none;
 }
 
-/* h2 {
-  font-size: 300%;
-  margin: 0%;
-  padding: 0%;
-} */
 
-/* h1 {
-  font-size: 600%;
-  margin: 0%;
-  padding: 0%;
-} */
-
-
-/* Split the screen in half */
-/* .split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden; 
-  padding-top: 20px;
-} */
-
-/* Control the left side */
-/* .left {
-  left: 0;
-  background-color:rgb(251,63,65);
-} */
-
-/* Control the right side */
-/* .right {
-  right: 0;
-  background-color:white;
-  /* width: 90% */
-/* } */ 
-
-/* If you want the content centered horizontally and vertically */
-/* .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  /* line-height: 1.6; */
-  /* font-weight: 600;
-} */ 
-
-/* div.centered {
-  width: 90%
-} */
 
 
 

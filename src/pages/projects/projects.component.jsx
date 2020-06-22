@@ -73,10 +73,13 @@ const Projects = () => {
             <div className="project-show-description">
               {clickedProject.description}
             </div>
+            <div>
             <img
               src={clickedProject.image}
               className="project-show-image"
-            ></img>
+            />
+            </div>
+            
           </div>
         </div>
       </div>

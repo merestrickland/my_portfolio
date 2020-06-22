@@ -48,7 +48,7 @@ body {
   width: 60%;
   background-color: white;
   border-radius: 5%;
-  font-size: 5vw;
+  font-size: 4vw;
   margin: 5%;
   box-shadow: 10px 5px 20px 0px #444444;
 
@@ -90,12 +90,12 @@ body {
 }
 
 .project-show-image {
-    max-width: 85%;
-    margin: 3% 3% 3% 3%;
+    height: 25vw;
+    margin: 3% 0%;
 }
 
 .project-show-description {
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin: 3%;
 }
 
