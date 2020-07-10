@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import projectList from '../../components/projectList'
 
 import { useHistory, Link } from "react-router-dom";
 import axios from "axios";
@@ -12,26 +13,27 @@ const Projects = () => {
   // const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    getReqProj();
+    setProjects(projectList)
   }, []);
 
-  useEffect(() => {
-    console.log(clickedProject);
-  });
+  // useEffect(() => {
+  //   console.log(clickedProject);
+  // });
 
-  const getReqProj = () => {
-    // setLoading(true)
-    axios
-      .get("https://radiant-basin-61864.herokuapp.com/projects")
-      .then((res) => {
-        // setLoading(false)
-        setProjects(res.data);
-      });
-  };
+  // const getReqProj = () => {
+  //   // setLoading(true)
+  //   axios
+  //     .get("https://radiant-basin-61864.herokuapp.com/projects")
+  //     .then((res) => {
+  //       // setLoading(false)
+  //       setProjects(res.data);
+  //     });
+  // };
 
   const closeProject = () => setClickedProject(null);
 
   if (clickedProject) {
+    console.log(projectList)
     return (
       <div className="project-show-container">
         <div className="project-show-titlecard">

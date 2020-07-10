@@ -45,7 +45,7 @@ body {
   display: flex;
   max-height: 100vh;
   flex-direction: column;
-  width: 60%;
+  width: 80%;
   background-color: white;
   border-radius: 5%;
   font-size: 4vw;
@@ -90,7 +90,7 @@ body {
 }
 
 .project-show-image {
-    height: 25vw;
+    height: 50vw;
     margin: 3% 0%;
 }
 
