@@ -9,23 +9,40 @@ function HomePage() {
   let history = useHistory();
 
   return (
-    <div className="container">
-      <div className="left">
-        <div className="hello-my-name">
-          <h1>Hello.</h1>
-          <h2 className="name">
-            My name is<span className="name"> Meredith.</span>
-          </h2>
-        </div>
-      </div>
 
-      <div className="right">
-        <div className="nav-list">
-          <NavList />
-        </div>
+    <div className="container">
+    <div className="left">
+      <div className="hello-my-name">
+        <h1>Hello.</h1>
+        <h2 className="name">
+          My name is<span className="name"> Meredith.</span>
+        </h2>
       </div>
     </div>
-  );
-}
+
+    <div className="right">
+      <div className="nav-list">
+        <NavList />
+      </div>
+    </div>
+  </div>
+);
+/* <>
+    <section id="home">
+      <div class='content-wrapper'>
+        <h2>Hi, I'm Meredith</h2>
+        <img
+        src='https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/smiley_PNG36233.png'
+        className='smiley'
+        />
+      </div>
+    </section>
+        <section id="project">
+        <div class='content-wrapper'>
+          <h2>tgis is project</h2>
+        </div>
+      </section>
+      </> */}
+
 
 export default HomePage;

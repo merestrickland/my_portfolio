@@ -1,0 +1,23 @@
+body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h2{
+  margin: 0;
+}
+
+.text-container{
+  margin: 4% 10%;
+}
+
+.sol{
+  display: flex;
+  justify-content: center;
+}
+
+a{
+  text-decoration: underline;
+  font-size: 1.5em;
+}

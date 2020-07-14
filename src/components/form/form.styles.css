@@ -120,5 +120,6 @@ p {
 }
 
 .hero {
-  color: rgb(251,63,65)
+  /* color: rgb(251,63,65); */
+  margin: 0
 }
