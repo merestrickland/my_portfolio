@@ -1,0 +1,45 @@
+.nav-container{
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* background-color: rgb(35, 57, 37); */
+  background-color:  rgb(251, 63, 65);
+}
+
+.nav-links{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-homepage{
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-end; */
+  align-items: center;
+  padding-left: 25%;
+}
+
+.nav-text{
+  /* color: rgb(35, 57, 37); */
+  color: black;
+  padding: 3%;
+  font-size: 2vw;
+}
+
+.name{
+  font-size: 2.8vw;
+  padding: 8%;
+}
+
+img{
+  height: 5vw;
+  /* object-fit: contain; */
+}
+
+li{
+  list-style-type: none;
+}
