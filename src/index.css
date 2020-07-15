@@ -1,36 +1,45 @@
-@font-face {
+/* @font-face {
   font-family: 'Embossed Label';
   src: local('Embossed Label'), url('./fonts/EmbossedLabel.ttf') format('truetype')
-}
+} */
 
 /* html {
-  overflow:   scroll;
-
+  overflow: scroll;
 } */
+
 
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
 }
 
-section{
+/* section{
   display: flex;
+} */
+
+h1, h2, h3{
+  font-family: 'B612';
 }
 
-
+p{
+  font-family: 'Open Sans'
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+  font-family: 'B612', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(251,63,65);
+  display: flex;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
