@@ -3,9 +3,10 @@
   src: local('Embossed Label'), url('./fonts/EmbossedLabel.ttf') format('truetype')
 } */
 
-/* html {
-  overflow: scroll;
-} */
+html {
+  /* overflow: scroll; */
+  height: 100%
+}
 
 
 ::-webkit-scrollbar {
@@ -21,7 +22,7 @@ h1, h2, h3{
   font-family: 'B612';
 }
 
-p{
+p, a, li{
   font-family: 'Open Sans'
 }
 
@@ -35,7 +36,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(251,63,65);
-  display: flex;
+  /* display: flex; */
 }
 
 /* code {
