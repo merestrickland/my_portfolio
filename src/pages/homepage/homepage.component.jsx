@@ -1,31 +1,22 @@
 import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import Projects from "../projects/projects.component";
-import NavList from "../../components/navlist/navlist.component";
+// import NavBar from '../../components/navbar/navbar.component'
 
 import "./homepage.styles.css";
+import NavBar from "../../components/navbar/navbar.component";
 
 function HomePage() {
   let history = useHistory();
 
   return (
+<div className='homepage-container'>
 
-    <div className="container">
-    <div className="left">
-      <div className="hello-my-name">
-        <h1>Hello.</h1>
-        <h2 className="name">
-          My name is<span className="name"> Meredith.</span>
-        </h2>
-      </div>
-    </div>
+      <NavBar />
 
-    <div className="right">
-      <div className="nav-list">
-        <NavList />
-      </div>
-    </div>
-  </div>
+    <div className='homepage-video-container'>INTRO VIDEO HERE</div>
+</div>
+
 );
 /* <>
     <section id="home">
