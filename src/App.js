@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import HomePage from './pages/homepage/homepage.component'
 import Resume from './pages/resume/resume.component'
 import Projects from './pages/projects/projects.component'
+import ProjectShow from './components/project/project-show.component'
 import Email from './pages/email/email.component'
 import About from './pages/about/about.component'
 import WallDrawing from './pages/Sol-Lewitt/wall-drawing.container'
@@ -23,8 +24,11 @@ function App() {
             backend={PDFJSBackend}
             src='/resume.pdf'/>
           </Route>
-          <Route path="/projects">
+          <Route path="/work">
             <Projects />
+          </Route>
+          <Route path="/work/:project">
+            <ProjectShow />
           </Route>
           <Route path="/wall-drawing" >
             <WallDrawing />
@@ -38,10 +42,7 @@ function App() {
           <Route path="/">
             <HomePage />
           </Route>
-          {/* <Route path= '/products/:id'>
-            <ProductModal />
-          </Route> */}
-          {/* <Route exact path={`/products/${modalData.id}`} component={ProductModal} /> */}
+
         </Switch>
       </Router>
       // </>

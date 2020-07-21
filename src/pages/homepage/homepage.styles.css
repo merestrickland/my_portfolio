@@ -10,135 +10,30 @@
 }
 
 .homepage-video-container{
-  margin-top: 20vh;
-  background-color: white;
-  height: 30%;
+  margin-top: 10%;
+  /* background-color: white; */
+  /* height: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .homepage-nav{
  padding-top: 5%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* body {
-  font-family: 'Spartan', sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  height: 100vh;
-} */
-
-.container {
-  /* height: 100vh; */
-  /* display: flex; */
-  /* padding: 0; */
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
-}
-
-/* .left {
-  height: 100vh;
-  width: 50vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color:rgb(251,63,65);
-} */
-
-/* .right {
-  height: 100vh;
-  width: 50vw;
-  display: flex;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .hello-my-name {
-  width: 80%;
-  height: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-} */
-
-/* .nav-list {
-  height: 30%;
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-} */
-
-/* .nav-links {
-  margin: 0;
-  padding: 0;
-  font-size: 1.5vw;
+.marquee{
+  margin-top: 10%;
+  height: 10%;
   width: 100%;
-} */
-
-
-/* @media all and (max-width: 1200px){
-
-  .nav-links {
-    font-size: 2vw;
-  }
-
-  h1 {
-    font-size: 11vw;
-  }
-
-  h2 {
-    font-size: 4.5vw
-  }
-} */
-
-/* @media all and (max-width: 700px){
-
-  .container {
-    flex-direction: column;
-  }
-
-  .left {
-    height: 50vh;
-    width: 100vw
-  }
-
-  .right {
-    height: 50vh;
-    width: 100vw
-  }
-
-  .nav-links {
-    font-size: 4vw;
-  }
-} */
-
-
-
-
-
-
+  background-color: rgb(238, 205, 72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+  font-size: 2vw
+}
 
 a:active {
   color: none;

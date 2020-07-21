@@ -103,7 +103,7 @@ h2 {
 marquee{
   height: 10%;
   width: 100%;
-  background-color: yellow;
+  background-color: rgb(238, 205, 72);
   display: flex;
   align-items: center;
   margin-bottom: 5%;
