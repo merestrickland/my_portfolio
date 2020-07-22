@@ -7,6 +7,7 @@ import Resume from './pages/resume/resume.component'
 import Projects from './pages/projects/projects.component'
 import Email from './pages/email/email.component'
 import About from './pages/about/about.component'
+import WallDrawing from './pages/Sol-Lewitt/wall-drawing.container'
 // import NavBar from './components/nav/nav.component'
 import PDFJSBackend from './backends/pdfjs'
 
@@ -25,9 +26,9 @@ function App() {
           <Route path="/projects">
             <Projects />
           </Route>
-          {/* <Route path="/projects/:id">
-            <Project />
-          </Route> */}
+          <Route path="/wall-drawing" >
+            <WallDrawing />
+          </Route>
           <Route path="/email">
             <Email />
           </Route>
