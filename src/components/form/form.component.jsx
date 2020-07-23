@@ -3,7 +3,6 @@ import { useHistory, Link } from 'react-router-dom'
 import Axios from 'axios'
 import './form.styles.css'
 
-import NavList from '../navlist/navlist.component'
 
 const emailPostUrl = ('https://radiant-basin-61864.herokuapp.com')
 
@@ -131,7 +130,6 @@ export default function Form() {
 
       <div className="split right">
         <div className="centered">
-          <NavList />
         </div>
       </div>
 
