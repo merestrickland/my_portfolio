@@ -28,6 +28,7 @@ const Projects = () => {
         {projects &&
           projects.map((project) => (
             <li key={project._id}>
+              {console.log(project.name)}
                 <Link to={`${match.url}/${project.name}`}>
                   {project.name}
                 </Link>
@@ -35,15 +36,7 @@ const Projects = () => {
           ))}
       </ul>
 
-            {/* <Switch>
 
-              <Route path={`${match.path}/:projectName`}>
-                <ProjectShow />
-              </Route>
-              <Route path={match.path}>
-                <h3>select a project</h3>
-              </Route>
-            </Switch> */}
 
 
 

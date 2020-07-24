@@ -25,7 +25,7 @@ function App() {
             backend={PDFJSBackend}
             src='/resume.pdf'/>
           </Route>
-          <Route path="/work">
+          <Route exact path="/work">
             <Projects />
           </Route>
           <Route path="/work/:projectName">

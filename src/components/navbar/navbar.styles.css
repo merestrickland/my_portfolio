@@ -6,6 +6,8 @@
   align-items: center;
   /* background-color: rgb(35, 57, 37); */
   background-color:  rgb(251, 63, 65);
+  outline: 10px solid #233925;
+  outline-offset: -3%;
 }
 
 .nav-links{
