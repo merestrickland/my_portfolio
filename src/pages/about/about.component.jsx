@@ -1,7 +1,5 @@
 import React from 'react'
-import NavList from '../../components/navlist/navlist.component'
 import './about.styles.css'
-import LazyLoad from 'react-lazyload'
 
 
 
@@ -23,7 +21,6 @@ export default function About() {
 
       <div className="right">
         <div className="nav-list">
-          <NavList />
         </div>
       </div>
   </div>
