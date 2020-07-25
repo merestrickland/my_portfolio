@@ -10,7 +10,7 @@ import Email from './pages/email/email.component'
 import About from './pages/about/about.component'
 import WallDrawing from './pages/Sol-Lewitt/wall-drawing.container'
 import NavBar from './components/navbar/navbar.component'
-// import NavBar from './components/nav/nav.component'
+import Eio from './components/eio/eio.component'
 import PDFJSBackend from './backends/pdfjs'
 
 function App() {
@@ -33,6 +33,9 @@ function App() {
           </Route>
           <Route path="/wall-drawing" >
             <WallDrawing />
+          </Route>
+          <Route path="/eio" >
+            <Eio />
           </Route>
           <Route path="/email">
             <Email />
