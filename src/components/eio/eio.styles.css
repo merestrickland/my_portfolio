@@ -1,0 +1,13 @@
+.eio-container{
+  background-image: url('https://meredith-strickland-portfolio.s3.amazonaws.com/farm.jpg');
+  height: 90vh;
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animal{
+  width: 30%;
+  height: 30%;
+}

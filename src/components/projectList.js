@@ -1,6 +1,6 @@
 
 const projectList = [
-  {"_id":1,"name":"Monster Money","description":"An app to teach teenagers financial literacy through the care of a monster","github":"https://github.com/Paper-Trail-Project","image":"https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/Screen+Shot+2020-07-10+at+1.45.04+PM.png", "component": "WallDrawing"},
+  {"_id":1,"name":"Monster Money","description":"An app to teach teenagers financial literacy through the care of a monster","github":"https://github.com/Paper-Trail-Project","image":"https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/Screen+Shot+2020-07-10+at+1.45.04+PM.png", "component": "walldrawing"},
 
   {"_id":2,"name":"Blobbers","description":"An interactive JavaScript SPA where the user gains points by grabbing pieces of the sun, or loses points by running into the falling rain","demoVid":"https://www.youtube.com/watch?v=CHfE7pHK0gU","toolsUsed":"JavaScript, P5.js","github":"https://github.com/jralorro93/blobbers-frontend","image":"https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/blobbers.png","__v":{"$numberInt":"0"}},
 
