@@ -5,44 +5,39 @@ import "./navbar.styles.css";
 const NavBar = () => {
   return (
     <div className="nav-container">
-      <div className="nav-links">
+      <div className="nav-links-container">
 
-      <Link to="/resume">
-        <li className="nav-text">
+      <Link to="/resume" className="nav-text">
           Resume
-        </li>
       </Link>
 
-      <a href="https://github.com/merestrickland" target="_blank">
-        <li className="nav-text">
+      <a href="https://github.com/merestrickland" target="_blank" className="nav-text">
             GitHub
-        </li>
       </a>
 
       <a href="https://www.linkedin.com/in/meredith-strickland-98406026/"
-            target="_blank">
-          <li className="nav-text">
+            target="_blank" className="nav-text">
               LinkedIn
-          </li>
       </a>
 
-      <Link to="/work">
-        <li className="nav-text">
+      <Link to="/work" className="nav-text">
           Work
-        </li>
       </Link>
 
       </div>
 
-      <Link to="/">
-        <div className="nav-homepage">
+      <div className="nav-homepage">
+        <div className='nav-logo-link'></div>
+      <Link to="/" className='nav-logo-link'>
+        
           <img
             src="https://meredith-strickland-portfolio.s3.amazonaws.com/Portfolio/smiley_PNG36233.png"
             className="nav-logo"
           />
-          <li className="nav-text name">Meredith Strickland</li>
-        </div>
+          <li className="name">Meredith Strickland</li>
+        
       </Link>
+      </div>
 
     </div>
   );
