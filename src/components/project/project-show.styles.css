@@ -35,7 +35,7 @@ a{
 }
 
 .project-information {
-  margin-top: 20%
+  margin-top: 30%
 }
 .project-title{
   transform: rotate(-5deg);
@@ -93,8 +93,14 @@ marquee{
   max-width: 100%;
 }
 
-.image{
+.image-container{
   display: flex;
   justify-content: center;
   max-width: 90%;
+}
+
+.media-image-gif{
+    max-width: 68vw;
+    max-height: 400vh;
+    width: 67vw;
 }
