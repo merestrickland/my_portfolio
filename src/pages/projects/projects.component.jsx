@@ -36,7 +36,9 @@ const Projects = () => {
           ))}
       </ul>
 
-
+      <marquee>
+            This site is a work in progress. Thank you for being here!
+      </marquee>
 
 
 

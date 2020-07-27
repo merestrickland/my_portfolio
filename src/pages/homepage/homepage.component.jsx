@@ -1,11 +1,7 @@
 import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import ReactPlayer from 'react-player'
-import Projects from "../projects/projects.component";
-// import NavBar from '../../components/navbar/navbar.component'
-
 import "./homepage.styles.css";
-import NavBar from "../../components/navbar/navbar.component";
 
 function HomePage() {
   let history = useHistory();
