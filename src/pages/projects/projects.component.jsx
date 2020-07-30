@@ -1,48 +1,39 @@
 import React, { useState, useEffect } from "react";
-import projectList from '../../components/projectList'
+import projectList from "../../components/projectList";
+import "./projects.styles.css"
 
-import { useHistory, Link, useParams, Outlet, useRouteMatch, Switch, Route } from "react-router-dom";
+import {
+  Link,
+  useRouteMatch
+} from "react-router-dom";
 
-import ProjectShow from "../../components/project/project-show.component";
-import "./projects.styles.css";
 
 const Projects = () => {
-
-
-  let match = useRouteMatch()
-
-
-
+  let match = useRouteMatch();
 
   const [projects, setProjects] = useState([]);
 
-
   useEffect(() => {
-    setProjects(projectList)
+    setProjects(projectList);
   }, []);
 
-
   return (
-    <div className="ul-container">
-      <ul className="projects-container">
+    <div className="projects-container">
+      <div className="ul-container">
         {projects &&
           projects.map((project) => (
-            <li key={project._id}>
-              {console.log(project.name)}
-                <Link to={`${match.url}/${project.name}`}>
-                  {project.name}
-                </Link>
-            </li>
+            // <li key={project._id} className="projects-li">
+            <div className="project-tile">
+              <Link to={`${match.url}/${project.name}`} className="project-name">{project.name}</Link>
+
+            </div>
+            // </li>
           ))}
-      </ul>
-
+      {/* </ul> */}
+        </div>
       <marquee>
-            This site is a work in progress. Thank you for being here!
+        This site is a work in progress. Thank you for being here!
       </marquee>
-
-
-
-
     </div>
   );
 };

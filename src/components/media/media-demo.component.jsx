@@ -11,7 +11,7 @@ const MediaDemo = (props) => {
     <>
       <div className="media-image-gif">
         <ReactPlayer url={media}
-        playing={false}
+        playing={true}
         controls={true}
         looping={true}
         volume='0'
